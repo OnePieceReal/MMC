@@ -1,0 +1,1 @@
+extern int start_photo_gallery(void);

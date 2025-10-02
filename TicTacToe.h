@@ -1,0 +1,1 @@
+extern int start_game(void);

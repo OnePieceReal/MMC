@@ -1,0 +1,361 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    blinky.o(i.display_main_menu) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    blinky.o(i.display_main_menu) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    blinky.o(i.display_main_menu) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayString) for GLCD_DisplayString
+    blinky.o(i.handle_joystick_input) refers to blinky.o(.data) for menu_display_state
+    blinky.o(i.reset_main_menu) refers to blinky.o(i.display_main_menu) for display_main_menu
+    blinky.o(i.reset_main_menu) refers to blinky.o(.data) for isDisplayStateModified
+    blinky.o(i.update_menu) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    blinky.o(i.update_menu) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    blinky.o(i.update_menu) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayString) for GLCD_DisplayString
+    blinky.o(i.update_menu) refers to blinky.o(.data) for menu_display_state
+    blinky.o(i.update_state) refers to photo_gallery.o(i.start_photo_gallery) for start_photo_gallery
+    blinky.o(i.update_state) refers to blinky.o(i.reset_main_menu) for reset_main_menu
+    blinky.o(i.update_state) refers to blinky.o(.data) for chosen_state
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(i.GLCD_SetWindow) for GLCD_SetWindow
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(i.wr_dat_start) for wr_dat_start
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(i.wr_dat_only) for wr_dat_only
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(i.wr_dat_stop) for wr_dat_stop
+    glcd_spi_lpc1700.o(i.GLCD_Bargraph) refers to glcd_spi_lpc1700.o(.data) for Color
+    glcd_spi_lpc1700.o(i.GLCD_Bitmap) refers to glcd_spi_lpc1700.o(i.GLCD_SetWindow) for GLCD_SetWindow
+    glcd_spi_lpc1700.o(i.GLCD_Bitmap) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_Bitmap) refers to glcd_spi_lpc1700.o(i.wr_dat_start) for wr_dat_start
+    glcd_spi_lpc1700.o(i.GLCD_Bitmap) refers to glcd_spi_lpc1700.o(i.wr_dat_only) for wr_dat_only
+    glcd_spi_lpc1700.o(i.GLCD_Bitmap) refers to glcd_spi_lpc1700.o(i.wr_dat_stop) for wr_dat_stop
+    glcd_spi_lpc1700.o(i.GLCD_Clear) refers to glcd_spi_lpc1700.o(i.GLCD_WindowMax) for GLCD_WindowMax
+    glcd_spi_lpc1700.o(i.GLCD_Clear) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_Clear) refers to glcd_spi_lpc1700.o(i.wr_dat_start) for wr_dat_start
+    glcd_spi_lpc1700.o(i.GLCD_Clear) refers to glcd_spi_lpc1700.o(i.wr_dat_only) for wr_dat_only
+    glcd_spi_lpc1700.o(i.GLCD_Clear) refers to glcd_spi_lpc1700.o(i.wr_dat_stop) for wr_dat_stop
+    glcd_spi_lpc1700.o(i.GLCD_ClearLn) refers to glcd_spi_lpc1700.o(i.GLCD_WindowMax) for GLCD_WindowMax
+    glcd_spi_lpc1700.o(i.GLCD_ClearLn) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayString) for GLCD_DisplayString
+    glcd_spi_lpc1700.o(i.GLCD_DisplayChar) refers to glcd_spi_lpc1700.o(i.GLCD_DrawChar) for GLCD_DrawChar
+    glcd_spi_lpc1700.o(i.GLCD_DisplayChar) refers to glcd_spi_lpc1700.o(.constdata) for Font_6x8_h
+    glcd_spi_lpc1700.o(i.GLCD_DisplayString) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(i.GLCD_SetWindow) for GLCD_SetWindow
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(i.wr_dat_start) for wr_dat_start
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(i.wr_dat_only) for wr_dat_only
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(i.wr_dat_stop) for wr_dat_stop
+    glcd_spi_lpc1700.o(i.GLCD_DrawChar) refers to glcd_spi_lpc1700.o(.data) for Color
+    glcd_spi_lpc1700.o(i.GLCD_Init) refers to glcd_spi_lpc1700.o(i.rd_id_man) for rd_id_man
+    glcd_spi_lpc1700.o(i.GLCD_Init) refers to glcd_spi_lpc1700.o(i.rd_reg) for rd_reg
+    glcd_spi_lpc1700.o(i.GLCD_Init) refers to glcd_spi_lpc1700.o(i.wr_reg) for wr_reg
+    glcd_spi_lpc1700.o(i.GLCD_Init) refers to glcd_spi_lpc1700.o(i.delay) for delay
+    glcd_spi_lpc1700.o(i.GLCD_Init) refers to glcd_spi_lpc1700.o(.data) for Himax
+    glcd_spi_lpc1700.o(i.GLCD_PutPixel) refers to glcd_spi_lpc1700.o(i.wr_reg) for wr_reg
+    glcd_spi_lpc1700.o(i.GLCD_PutPixel) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_PutPixel) refers to glcd_spi_lpc1700.o(i.wr_dat) for wr_dat
+    glcd_spi_lpc1700.o(i.GLCD_PutPixel) refers to glcd_spi_lpc1700.o(.data) for Himax
+    glcd_spi_lpc1700.o(i.GLCD_SetBackColor) refers to glcd_spi_lpc1700.o(.data) for Color
+    glcd_spi_lpc1700.o(i.GLCD_SetTextColor) refers to glcd_spi_lpc1700.o(.data) for Color
+    glcd_spi_lpc1700.o(i.GLCD_SetWindow) refers to glcd_spi_lpc1700.o(i.wr_reg) for wr_reg
+    glcd_spi_lpc1700.o(i.GLCD_SetWindow) refers to glcd_spi_lpc1700.o(.data) for Himax
+    glcd_spi_lpc1700.o(i.GLCD_WindowMax) refers to glcd_spi_lpc1700.o(i.GLCD_SetWindow) for GLCD_SetWindow
+    glcd_spi_lpc1700.o(i.GLCD_WrCmd) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.GLCD_WrReg) refers to glcd_spi_lpc1700.o(i.wr_reg) for wr_reg
+    glcd_spi_lpc1700.o(i.rd_id_man) refers to glcd_spi_lpc1700.o(i.spi_tran_man) for spi_tran_man
+    glcd_spi_lpc1700.o(i.rd_reg) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.rd_reg) refers to glcd_spi_lpc1700.o(i.spi_tran) for spi_tran
+    glcd_spi_lpc1700.o(i.spi_tran_man) refers to glcd_spi_lpc1700.o(i.delay) for delay
+    glcd_spi_lpc1700.o(i.wr_cmd) refers to glcd_spi_lpc1700.o(i.spi_tran) for spi_tran
+    glcd_spi_lpc1700.o(i.wr_dat) refers to glcd_spi_lpc1700.o(i.spi_tran) for spi_tran
+    glcd_spi_lpc1700.o(i.wr_dat_only) refers to glcd_spi_lpc1700.o(i.spi_tran) for spi_tran
+    glcd_spi_lpc1700.o(i.wr_dat_start) refers to glcd_spi_lpc1700.o(i.spi_tran) for spi_tran
+    glcd_spi_lpc1700.o(i.wr_reg) refers to glcd_spi_lpc1700.o(i.wr_cmd) for wr_cmd
+    glcd_spi_lpc1700.o(i.wr_reg) refers to glcd_spi_lpc1700.o(i.wr_dat) for wr_dat
+    kbd.o(i.get_button) refers to kbd.o(i.KBD_get) for KBD_get
+    photo_gallery.o(i.display_instructions) refers to glcd_spi_lpc1700.o(i.GLCD_Init) for GLCD_Init
+    photo_gallery.o(i.display_instructions) refers to glcd_spi_lpc1700.o(i.GLCD_Clear) for GLCD_Clear
+    photo_gallery.o(i.display_instructions) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    photo_gallery.o(i.display_instructions) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    photo_gallery.o(i.display_instructions) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayString) for GLCD_DisplayString
+    photo_gallery.o(i.manage_joystick_input) refers to photo_gallery.o(.data) for image_state
+    photo_gallery.o(i.reset_photo_gallery) refers to photo_gallery.o(i.display_instructions) for display_instructions
+    photo_gallery.o(i.reset_photo_gallery) refers to photo_gallery.o(i.update_display_state) for update_display_state
+    photo_gallery.o(i.reset_photo_gallery) refers to kbd.o(i.KBD_Init) for KBD_Init
+    photo_gallery.o(i.reset_photo_gallery) refers to photo_gallery.o(.data) for image_state
+    photo_gallery.o(i.start_photo_gallery) refers to photo_gallery.o(i.reset_photo_gallery) for reset_photo_gallery
+    photo_gallery.o(i.start_photo_gallery) refers to kbd.o(i.get_button) for get_button
+    photo_gallery.o(i.start_photo_gallery) refers to photo_gallery.o(i.manage_joystick_input) for manage_joystick_input
+    photo_gallery.o(i.start_photo_gallery) refers to photo_gallery.o(i.update_display_state) for update_display_state
+    photo_gallery.o(i.start_photo_gallery) refers to photo_gallery.o(.data) for isStateModified
+    photo_gallery.o(i.update_display_state) refers to photo_gallery.o(i.center_image) for center_image
+    photo_gallery.o(i.update_display_state) refers to photo_gallery.o(.data) for image_state
+    tictactoe.o(i.boardCoordToDisplayCoord) refers to tictactoe.o(.bss) for cord
+    tictactoe.o(i.displayCoordToBoardCord) refers to tictactoe.o(.bss) for cord
+    tictactoe.o(i.display_tictactoe_board) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    tictactoe.o(i.display_tictactoe_board) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    tictactoe.o(i.display_tictactoe_board) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayString) for GLCD_DisplayString
+    tictactoe.o(i.enterInput) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.evaluate) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.find_best_move) refers to tictactoe.o(i.minimax) for minimax
+    tictactoe.o(i.find_best_move) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.initialize_coord) refers to tictactoe.o(.bss) for cord
+    tictactoe.o(i.initialize_coord) refers to tictactoe.o(.data) for step_x
+    tictactoe.o(i.isInputValid) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.is_moves_left) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.manage_joystick) refers to tictactoe.o(i.displayCoordToBoardCord) for displayCoordToBoardCord
+    tictactoe.o(i.manage_joystick) refers to tictactoe.o(i.isInputValid) for isInputValid
+    tictactoe.o(i.manage_joystick) refers to tictactoe.o(.data) for step_x
+    tictactoe.o(i.manage_joystick) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.minimax) refers to tictactoe.o(i.evaluate) for evaluate
+    tictactoe.o(i.minimax) refers to tictactoe.o(i.is_moves_left) for is_moves_left
+    tictactoe.o(i.minimax) refers to tictactoe.o(.bss) for board
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.initialize_coord) for initialize_coord
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.manage_joystick) for manage_joystick
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.find_best_move) for find_best_move
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.enterInput) for enterInput
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.boardCoordToDisplayCoord) for boardCoordToDisplayCoord
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.evaluate) for evaluate
+    tictactoe.o(i.start_game) refers to tictactoe.o(i.is_moves_left) for is_moves_left
+    tictactoe.o(i.start_game) refers to tictactoe.o(.data) for step_y
+    pong_game.o(i.clear_ball) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.clear_ball) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    pong_game.o(i.clear_paddle) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.clear_paddle) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    pong_game.o(i.display_score) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.display_score) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    pong_game.o(i.display_score) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    pong_game.o(i.display_score) refers to pong_game.o(.data) for player_score
+    pong_game.o(i.draw_ball) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.draw_ball) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    pong_game.o(i.draw_paddle) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.draw_paddle) refers to glcd_spi_lpc1700.o(i.GLCD_DisplayChar) for GLCD_DisplayChar
+    pong_game.o(i.start_pong) refers to glcd_spi_lpc1700.o(i.GLCD_Init) for GLCD_Init
+    pong_game.o(i.start_pong) refers to glcd_spi_lpc1700.o(i.GLCD_Clear) for GLCD_Clear
+    pong_game.o(i.start_pong) refers to kbd.o(i.KBD_Init) for KBD_Init
+    pong_game.o(i.start_pong) refers to glcd_spi_lpc1700.o(i.GLCD_SetTextColor) for GLCD_SetTextColor
+    pong_game.o(i.start_pong) refers to glcd_spi_lpc1700.o(i.GLCD_SetBackColor) for GLCD_SetBackColor
+    pong_game.o(i.start_pong) refers to pong_game.o(i.display_score) for display_score
+    pong_game.o(i.start_pong) refers to pong_game.o(i.draw_paddle) for draw_paddle
+    pong_game.o(i.start_pong) refers to pong_game.o(i.draw_ball) for draw_ball
+    pong_game.o(i.start_pong) refers to kbd.o(i.get_button) for get_button
+    pong_game.o(i.start_pong) refers to pong_game.o(i.update_player_paddle) for update_player_paddle
+    pong_game.o(i.start_pong) refers to pong_game.o(i.update_ball) for update_ball
+    pong_game.o(i.start_pong) refers to pong_game.o(i.custom_delay) for custom_delay
+    pong_game.o(i.start_pong) refers to pong_game.o(.data) for paddle_right
+    pong_game.o(i.update_ball) refers to pong_game.o(i.clear_ball) for clear_ball
+    pong_game.o(i.update_ball) refers to pong_game.o(i.display_score) for display_score
+    pong_game.o(i.update_ball) refers to pong_game.o(i.draw_ball) for draw_ball
+    pong_game.o(i.update_ball) refers to pong_game.o(i.draw_paddle) for draw_paddle
+    pong_game.o(i.update_ball) refers to pong_game.o(.data) for ball_x
+    pong_game.o(i.update_player_paddle) refers to kbd.o(i.get_button) for get_button
+    pong_game.o(i.update_player_paddle) refers to pong_game.o(i.clear_paddle) for clear_paddle
+    pong_game.o(i.update_player_paddle) refers to pong_game.o(i.draw_paddle) for draw_paddle
+    pong_game.o(i.update_player_paddle) refers to pong_game.o(.data) for paddle_left
+    eventrecorder.o(i.EventCheckFilter) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventGetTS) refers to eventrecorder.o(i.EventRecorderTimerGetCount) for EventRecorderTimerGetCount
+    eventrecorder.o(i.EventGetTS) refers to eventrecorder.o(.emb_text) for __asm___15_EventRecorder_c_e8d3082c__atomic_wr8
+    eventrecorder.o(i.EventGetTS) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventGetTS) refers to eventrecorder.o(.data) for TS_OverflowLock
+    eventrecorder.o(i.EventRecord2) refers to eventrecorder.o(i.EventCheckFilter) for EventCheckFilter
+    eventrecorder.o(i.EventRecord2) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecord2) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecord4) refers to eventrecorder.o(i.EventCheckFilter) for EventCheckFilter
+    eventrecorder.o(i.EventRecord4) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecord4) refers to eventrecorder.o(i.GetContext) for GetContext
+    eventrecorder.o(i.EventRecord4) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecordData) refers to eventrecorder.o(i.EventCheckFilter) for EventCheckFilter
+    eventrecorder.o(i.EventRecordData) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecordData) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecordData) refers to memcpya.o(.text) for __aeabi_memcpy
+    eventrecorder.o(i.EventRecordData) refers to eventrecorder.o(i.GetContext) for GetContext
+    eventrecorder.o(i.EventRecordItem) refers to eventrecorder.o(.emb_text) for __asm___15_EventRecorder_c_e8d3082c__atomic_inc32
+    eventrecorder.o(i.EventRecordItem) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventRecorderClockUpdate) refers to eventrecorder.o(i.EventRecorderTimerGetFreq) for EventRecorderTimerGetFreq
+    eventrecorder.o(i.EventRecorderClockUpdate) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecorderClockUpdate) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecorderClockUpdate) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventRecorderDisable) refers to eventrecorder.o(.bss.noinit) for EventFilter
+    eventrecorder.o(i.EventRecorderEnable) refers to eventrecorder.o(.bss.noinit) for EventFilter
+    eventrecorder.o(i.EventRecorderInitialize) refers to memseta.o(.text) for __aeabi_memclr4
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.crc16_ccitt) for crc16_ccitt
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventRecorderTimerSetup) for EventRecorderTimerSetup
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventRecorderTimerGetFreq) for EventRecorderTimerGetFreq
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventRecorderEnable) for EventRecorderEnable
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(i.EventRecorderStart) for EventRecorderStart
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(.constdata) for EventRecorderInfo
+    eventrecorder.o(i.EventRecorderInitialize) refers to eventrecorder.o(.data) for TS_OverflowLock
+    eventrecorder.o(i.EventRecorderStart) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecorderStart) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecorderStart) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventRecorderStop) refers to eventrecorder.o(i.EventGetTS) for EventGetTS
+    eventrecorder.o(i.EventRecorderStop) refers to eventrecorder.o(i.EventRecordItem) for EventRecordItem
+    eventrecorder.o(i.EventRecorderStop) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(i.EventRecorderTimerGetFreq) refers to system_lpc17xx.o(.data) for SystemCoreClock
+    eventrecorder.o(i.GetContext) refers to eventrecorder.o(.emb_text) for __asm___15_EventRecorder_c_e8d3082c__atomic_inc8
+    eventrecorder.o(i.GetContext) refers to eventrecorder.o(.bss.noinit) for EventStatus
+    eventrecorder.o(.constdata) refers to eventrecorder.o(.bss.noinit) for EventBuffer
+    startup_lpc17xx.o(RESET) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    startup_lpc17xx.o(RESET) refers to startup_lpc17xx.o(.text) for Reset_Handler
+    startup_lpc17xx.o(.text) refers to system_lpc17xx.o(i.SystemInit) for SystemInit
+    startup_lpc17xx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_lpc17xx.o(i.SystemCoreClockUpdate) refers to uldiv.o(.text) for __aeabi_uldivmod
+    system_lpc17xx.o(i.SystemCoreClockUpdate) refers to system_lpc17xx.o(.data) for SystemCoreClock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing blinky.o(.rev16_text), (4 bytes).
+    Removing blinky.o(.revsh_text), (4 bytes).
+    Removing blinky.o(.rrx_text), (6 bytes).
+    Removing blinky.o(i.delay), (14 bytes).
+    Removing blinky.o(i.display_main_menu), (244 bytes).
+    Removing blinky.o(i.handle_joystick_input), (140 bytes).
+    Removing blinky.o(i.reset_main_menu), (44 bytes).
+    Removing blinky.o(i.update_menu), (624 bytes).
+    Removing blinky.o(i.update_state), (44 bytes).
+    Removing blinky.o(.data), (16 bytes).
+    Removing glcd_spi_lpc1700.o(.rev16_text), (4 bytes).
+    Removing glcd_spi_lpc1700.o(.revsh_text), (4 bytes).
+    Removing glcd_spi_lpc1700.o(.rrx_text), (6 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_Bargraph), (104 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_Bitmap), (82 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_Clear), (42 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_ClearLn), (94 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_DisplayChar), (92 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_DisplayString), (40 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_DrawChar), (156 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_Init), (1512 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_PutPixel), (128 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_ScrollVertical), (2 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_SetBackColor), (12 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_SetTextColor), (12 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_SetWindow), (172 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_WindowMax), (18 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_WrCmd), (12 bytes).
+    Removing glcd_spi_lpc1700.o(i.GLCD_WrReg), (16 bytes).
+    Removing glcd_spi_lpc1700.o(i.delay), (14 bytes).
+    Removing glcd_spi_lpc1700.o(i.rd_id_man), (140 bytes).
+    Removing glcd_spi_lpc1700.o(i.rd_reg), (72 bytes).
+    Removing glcd_spi_lpc1700.o(i.spi_tran), (32 bytes).
+    Removing glcd_spi_lpc1700.o(i.spi_tran_man), (128 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_cmd), (40 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_dat), (40 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_dat_only), (18 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_dat_start), (20 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_dat_stop), (12 bytes).
+    Removing glcd_spi_lpc1700.o(i.wr_reg), (20 bytes).
+    Removing glcd_spi_lpc1700.o(.constdata), (6272 bytes).
+    Removing glcd_spi_lpc1700.o(.data), (5 bytes).
+    Removing kbd.o(.rev16_text), (4 bytes).
+    Removing kbd.o(.revsh_text), (4 bytes).
+    Removing kbd.o(.rrx_text), (6 bytes).
+    Removing kbd.o(i.KBD_Init), (60 bytes).
+    Removing kbd.o(i.KBD_get), (16 bytes).
+    Removing kbd.o(i.get_button), (20 bytes).
+    Removing kbd.o(.data), (4 bytes).
+    Removing led.o(.rev16_text), (4 bytes).
+    Removing led.o(.revsh_text), (4 bytes).
+    Removing led.o(.rrx_text), (6 bytes).
+    Removing led.o(i.LED_Init), (48 bytes).
+    Removing photo_gallery.o(.rev16_text), (4 bytes).
+    Removing photo_gallery.o(.revsh_text), (4 bytes).
+    Removing photo_gallery.o(.rrx_text), (6 bytes).
+    Removing photo_gallery.o(i.center_image), (14 bytes).
+    Removing photo_gallery.o(i.display_instructions), (120 bytes).
+    Removing photo_gallery.o(i.manage_joystick_input), (132 bytes).
+    Removing photo_gallery.o(i.reset_photo_gallery), (56 bytes).
+    Removing photo_gallery.o(i.start_photo_gallery), (56 bytes).
+    Removing photo_gallery.o(i.update_display_state), (48 bytes).
+    Removing photo_gallery.o(.data), (12 bytes).
+    Removing tictactoe.o(i.boardCoordToDisplayCoord), (56 bytes).
+    Removing tictactoe.o(i.displayCoordToBoardCord), (76 bytes).
+    Removing tictactoe.o(i.display_tictactoe_board), (188 bytes).
+    Removing tictactoe.o(i.enterInput), (44 bytes).
+    Removing tictactoe.o(i.evaluate), (276 bytes).
+    Removing tictactoe.o(i.find_best_move), (124 bytes).
+    Removing tictactoe.o(i.initialize_coord), (76 bytes).
+    Removing tictactoe.o(i.isInputValid), (32 bytes).
+    Removing tictactoe.o(i.is_moves_left), (48 bytes).
+    Removing tictactoe.o(i.manage_joystick), (384 bytes).
+    Removing tictactoe.o(i.minimax), (260 bytes).
+    Removing tictactoe.o(i.start_game), (168 bytes).
+    Removing tictactoe.o(.bss), (108 bytes).
+    Removing tictactoe.o(.data), (18 bytes).
+    Removing pong_game.o(i.clear_ball), (26 bytes).
+    Removing pong_game.o(i.clear_paddle), (64 bytes).
+    Removing pong_game.o(i.custom_delay), (24 bytes).
+    Removing pong_game.o(i.display_score), (40 bytes).
+    Removing pong_game.o(i.draw_ball), (26 bytes).
+    Removing pong_game.o(i.draw_paddle), (66 bytes).
+    Removing pong_game.o(i.start_pong), (116 bytes).
+    Removing pong_game.o(i.update_ball), (232 bytes).
+    Removing pong_game.o(i.update_player_paddle), (140 bytes).
+    Removing pong_game.o(.data), (28 bytes).
+    Removing avatar.o(.constdata), (59341 bytes).
+    Removing dune.o(.constdata), (70381 bytes).
+    Removing luffy.o(.constdata), (59341 bytes).
+    Removing eventrecorder.o(.rev16_text), (4 bytes).
+    Removing eventrecorder.o(.revsh_text), (4 bytes).
+    Removing eventrecorder.o(.rrx_text), (6 bytes).
+    Removing eventrecorder.o(.emb_text), (132 bytes).
+    Removing eventrecorder.o(i.EventCheckFilter), (40 bytes).
+    Removing eventrecorder.o(i.EventGetTS), (88 bytes).
+    Removing eventrecorder.o(i.EventRecord2), (70 bytes).
+    Removing eventrecorder.o(i.EventRecord4), (118 bytes).
+    Removing eventrecorder.o(i.EventRecordData), (278 bytes).
+    Removing eventrecorder.o(i.EventRecordItem), (216 bytes).
+    Removing eventrecorder.o(i.EventRecorderClockUpdate), (44 bytes).
+    Removing eventrecorder.o(i.EventRecorderDisable), (92 bytes).
+    Removing eventrecorder.o(i.EventRecorderEnable), (92 bytes).
+    Removing eventrecorder.o(i.EventRecorderInitialize), (304 bytes).
+    Removing eventrecorder.o(i.EventRecorderStart), (48 bytes).
+    Removing eventrecorder.o(i.EventRecorderStop), (48 bytes).
+    Removing eventrecorder.o(i.EventRecorderTimerGetCount), (12 bytes).
+    Removing eventrecorder.o(i.EventRecorderTimerGetFreq), (12 bytes).
+    Removing eventrecorder.o(i.EventRecorderTimerSetup), (36 bytes).
+    Removing eventrecorder.o(i.GetContext), (16 bytes).
+    Removing eventrecorder.o(i.crc16_ccitt), (66 bytes).
+    Removing eventrecorder.o(.data), (1 bytes).
+    Removing gpio_lpc17xx.o(.rev16_text), (4 bytes).
+    Removing gpio_lpc17xx.o(.revsh_text), (4 bytes).
+    Removing gpio_lpc17xx.o(.rrx_text), (6 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_PinRead), (32 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_PinWrite), (40 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_PortClock), (44 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_PortRead), (20 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_PortWrite), (32 bytes).
+    Removing gpio_lpc17xx.o(i.GPIO_SetDir), (56 bytes).
+    Removing pin_lpc17xx.o(.rev16_text), (4 bytes).
+    Removing pin_lpc17xx.o(.revsh_text), (4 bytes).
+    Removing pin_lpc17xx.o(.rrx_text), (6 bytes).
+    Removing pin_lpc17xx.o(i.PIN_Configure), (252 bytes).
+    Removing pin_lpc17xx.o(i.PIN_ConfigureI2C0Pins), (32 bytes).
+    Removing pin_lpc17xx.o(i.PIN_ConfigureTPIU), (40 bytes).
+    Removing startup_lpc17xx.o(HEAP), (0 bytes).
+    Removing system_lpc17xx.o(.rev16_text), (4 bytes).
+    Removing system_lpc17xx.o(.revsh_text), (4 bytes).
+    Removing system_lpc17xx.o(.rrx_text), (6 bytes).
+    Removing system_lpc17xx.o(i.SystemCoreClockUpdate), (424 bytes).
+    Removing system_lpc17xx.o(.data), (4 bytes).
+
+133 unused section(s) (total 205517 bytes) removed from the image.

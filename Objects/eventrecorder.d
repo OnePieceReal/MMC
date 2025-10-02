@@ -1,0 +1,11 @@
+.\objects\eventrecorder.o: C:/Users/starr/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/EventRecorder.c
+.\objects\eventrecorder.o: .\RTE\_Target_1\RTE_Components.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.2\Device\Include\LPC17xx.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\ARM\CMSIS\5.0.0\CMSIS\Include\core_cm3.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_compiler.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\ARM\CMSIS\5.0.0\CMSIS\Include\cmsis_armcc.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.7.2\Device\Include\system_LPC17xx.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\eventrecorder.o: C:\Users\starr\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\Include\EventRecorder.h
+.\objects\eventrecorder.o: .\RTE\Compiler\EventRecorderConf.h
